@@ -8,30 +8,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- fonts, icons for bootstrap -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <script src="js/custom.js"></script>
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- HTML5 Support for IE -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shim.js"></script>
-    <![endif]-->
-
-  <script type="text/javascript">
-  </script>
 </head>
-
 <body>
-
 
     <!-- Navigation bar starts -->
 
@@ -54,7 +38,7 @@
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav pull-right">
                 <li class="active">
-                    <a id="home" href="javascript:void(0);" onclick="loadTemplate(this);">
+                    <a href="index.html">
                         <!-- <i class="fa fa-home blue"> </i> --> Home
                     </a>
                 </li>
@@ -64,77 +48,93 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a  id="history"  href="javascript:void(0);" onclick="loadTemplate(this);">History</a>
+                            <a  href="history.html" >History</a>
                         </li>
                         <li class="">
-                            <a id="members" href="javascript:void(0);" onclick="loadTemplate(this);">Members</a>
+                            <a href="members.html">Members</a>
                         </li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clones <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li class=""><a id="criteria" href="javascript:void(0);" onclick="loadTemplate(this);">Criteria & Nomenclature</a></li>
-                        <li class=""><a id="clone-collection" href="javascript:void(0);" onclick="loadTemplate(this);">Clone Collection</a></li>
-                        <li class=""><a id="map_view" href="javascript:void(0);" onclick="loadTemplate(this);" >Clone Map</a></li>
-                        <li class=""><a id="molecular-typing" href="javascript:void(0);" onclick="loadTemplate(this);">Molecular Typing</a></li>
+                        <li class=""><a href="criteria.html">Criteria & Nomenclature</a></li>
+                        <li class=""><a href="clone-collection.html">Clone Collection</a></li>
+                        <li class=""><a href="map_view.html" >Clone Map</a></li>
+                        <li class=""><a href="molecular-typing.html">Molecular Typing</a></li>
                     </ul>
                 </li>
-                <li><a id="contact" href="javascript:void(0);" onclick="loadTemplate(this);"> Contact</a></li>
+                <li><a href="contact.html"> Contact</a></li>
             </ul>
           </nav>
        </div>
     </div>
 <!-- Navigation bar ends -->
- 
-<div id="content"></div>
-<div id="modal"></div>
+
+<div id="content">
+  <section>
+        <div class="container">
+            <div class="banner">
+                <div class="text-center">
+                        <h2>Pneumococcal Molecular Epidemiology Network</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <img src="img/S.pneumoniae.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <img src="img/gram%20stain.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <img src="img/pneumo2.jpg" />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <img src="img/strep_pneumoniae.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container content">
+      <header>
+          <h2>Our Mission</h2>
+      </header>
+      <div class="desc">
+        <p>
+            The Pneumococcal Molecular Epidemiology Network (PMEN) was established in 1997 with the aim of global surveillance of antibiotic-resistant Streptococcus pneumoniae and the standardization of nomenclature and classification of resistant clones.  Global antibiotic-susceptible clones are also now considered for inclusion into the Network.
+        </p>
+        <p>
+          There are currently 43 clones described by the PMEN (the 1st 16 are published by <a target="_blank" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=11427569">McGee
+  et al 2001</a>.  Clones 17-26 have been confirmed by the Network and 27-43 need to have the type strains submitted, ratified and deposited with ATCC).
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
 <footer>
       <!------------------ Social Communications ---------------->
       <section id="social-footer">
         <div class="container">
           <div class="row">
-              <br>
-              <div class="col-lg-6 col-md-6">
-                  <div id="social">
-                      <!-- News widget here -->
-                      <h2><i class="fa fa-bullhorn lbrown"></i> News</h2>
-                      <div id="info" class="block">
-                          <ul id="ticker">
-                              <li>
-                                  <em>The 9th PMEN meeting was held in Alice Springs, Australia during ISPPD-5 in April 2006. New clones were included into the Network and details can be found at <a id="clone-collection" href="javascript:void(0);" onclick="loadTemplate(this);">Clone Collection</a></em>
-                                  
-                              </li>                     
-                              <li>
-                                  <em>The PMEN has decided to include major invasive antibiotic-susceptible clones that have a wide geographic spread.  Potential candidate clones and information can be submitted to curator <a href="mailto:lmcgee@sph.emory.edu"> Lesley
-McGee</a>.</em>
-                              </li>
-                            <li>
-                              <em>The 10th PMEN meeting is scheduled for the 6th International Symposium on Pneumococci and Pneumococcal Disease (ISPPD) which will take place in Reykjavik in Iceland from June 9th to 12th, 2008.</em>
-                            </li>
-                          </ul>
-                      </div>
-                  </div>                
-              </div>
               <!-- Twitter widget here -->
-              <div class="col-lg-6 col-md-6">
+              <div class="col-lg-12 col-md-12">
                   <h2><i class="fa fa-sitemap lbrown"></i> Site Map</h2>
                   <div class="copy">
                     <p>
                         <ul>
-                          <li><a id="home" href="javascript:void(0);" onclick="loadTemplate(this);">Home</a></li>
+                          <li><a href="index.html">Home</a></li>
                           <li>
-                            <a id="members" href="javascript:void(0);" onclick="loadTemplate(this);">Members</a> / 
-                            <a id="history"  href="javascript:void(0);" onclick="loadTemplate(this);">History</a> /
-                            <a id="members" href="javascript:void(0);" onclick="loadTemplate(this);">Members</a>
+                            <a href="members.html">Members</a> / 
+                            <a href="history.html" >History</a> /
+                            <a href="members.html">Members</a>
                           </li>
                           <li>
-                            <a id="criteria" href="javascript:void(0);" onclick="loadTemplate(this);">Criteria & Nomenclature</a> / 
-                            <a id="clone-collection" href="javascript:void(0);" onclick="loadTemplate(this);">Clone Collection</a> / 
-                            <a id="map_view" href="javascript:void(0);" onclick="loadTemplate(this);" >Clone Map</a> / 
-                            <a id="molecular-typing" href="javascript:void(0);" onclick="loadTemplate(this);">Molecular Typing</a>                          
+                            <a href="criteria.html">Criteria & Nomenclature</a> / 
+                            <a href="clone-collection.html">Clone Collection</a> / 
+                            <a href="map_view.html" >Clone Map</a> / 
+                            <a href="molecular-typing.html">Molecular Typing</a>                          
                           </li>
-                          <li><a id="contact" href="javascript:void(0);" onclick="loadTemplate(this);">Contact</a></li>
+                          <li><a href="contact.html">Contact</a></li>
                     
                         </ul>
 
@@ -147,6 +147,12 @@ McGee</a>.</em>
       </div>
     </section>
     <div class="clearfix"></div>
-</footer> 
+</footer>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+
 </body>
 </html>

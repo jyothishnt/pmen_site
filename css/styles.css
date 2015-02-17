@@ -2,6 +2,7 @@
 	border-radius: 0px !important;
 }
 
+
 body{
 	color: #77490b;
 	font-size: 1em;
@@ -156,11 +157,11 @@ blockquote{
 
 
 form{
-  margin:20px 0px;
+  /*margin:20px 0px;*/
 }
 
 section {
-    margin-top: 50px; 
+    padding-top: 50px;
     font-size:0.95em;
     font-weight:normal;
 }
@@ -411,7 +412,6 @@ section {
 
 
 .container{
-	padding: 20px;
    max-width:960px;
 }
 
@@ -508,12 +508,10 @@ header form{
 }
 
 .navbar .nav > li > a:hover{
-	background: #eae3d9 !important;
+  background: #eae3d9;
   border-bottom: 2px solid #a57534;
 }
-.navbar .nav > li > a {
 
-}
 .navbar .icon-bar{
    background: #402808;
 }
@@ -523,6 +521,12 @@ header form{
 	border-right: 1px solid #eee !important;
 	border-bottom: 1px solid #eee !important;
 }
+
+.navbar .dropdown-menu .active{
+	background: #000 !important;
+}
+
+
 /* Navigation */
 
 
@@ -903,7 +907,7 @@ ul.hover-block img {
 footer{
 	background: #f6f6f6;
 	color: #444;
-  margin: 20px 0 0 0;
+  margin: 0px 0 0 0;
 }
 
 footer a{
